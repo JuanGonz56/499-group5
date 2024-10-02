@@ -2,8 +2,6 @@ import { createNewUser, getUserByemail } from "../services/user.service.js";
 
 export const getUserData = async (req, res) => {
   try {
-    //const email = req.params.id;
-    //const user = getUserByemail(email);
 
     res.status(200).json({ "status":"user fetched" });
   } catch (err) {
